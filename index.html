@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Download 32xemu</title>
+<style>
+  body { background:#111; color:white; text-align:center; font-family:sans-serif; }
+  button {
+    padding: 15px 25px;
+    font-size: 20px;
+    background:#28a4ff;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  button:hover { background:#1f7fcc; }
+</style>
+</head>
+<body>
+
+<h1>32xemu Download</h1>
+<p>Click to download the full emulator package.</p>
+
+<button onclick="downloadNow()">Download 32xemu</button>
+
+<script>
+function downloadNow() {
+  const a = document.createElement('a');
+  a.href = '32xemu.zip';
+  a.download = '32xemu.zip';
+  a.click();
+}
+</script>
+
+</body>
+</html>
